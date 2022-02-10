@@ -65,6 +65,7 @@ link_directories(${EXTERNAL_LIBS} ${INTERNAL_LIBS})
 
 string(CONCAT OCDD_OPTIONS	      
     "-DENABLE_STORE_MINGRAPH "			# storing the minimal graph in dbm_t (another kind of cache)
+    "-DISABLE_ASSERTX"              # Disable exspensive asserts
 )
 
 if (NOT CMAKE_BUILD_TYPE)
